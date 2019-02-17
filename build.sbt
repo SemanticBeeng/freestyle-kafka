@@ -2,7 +2,7 @@ pgpPassphrase := Some(getEnvVar("PGP_PASSPHRASE").getOrElse("").toCharArray)
 pgpPublicRing := file(s"$gpgFolder/pubring.gpg")
 pgpSecretRing := file(s"$gpgFolder/secring.gpg")
 
-lazy val freesV = "0.5.1"
+lazy val freesV = "0.8.3-SNAPSHOT"
 
 lazy val commonDependencies: Seq[ModuleID] = Seq(
   %%("cats-core"),
